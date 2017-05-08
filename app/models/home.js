@@ -1,7 +1,7 @@
 export default {
     namespace: 'home',
     state: {
-        fetching: false,
+        homeTitle: '首页标题',
         login: false,
     },
     reducers: {

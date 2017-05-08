@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {connect} from 'dva';
 import {
     View,
     Text,
@@ -7,10 +8,11 @@ import {
 
 class Home extends Component {
     render() {
+        const {home} = this.props;
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to React Native!
+                    {home.homeTitle}
                 </Text>
                 <Text style={styles.instructions}>
                     To get started, edit index.ios.js
@@ -43,4 +45,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home;
+export default connect(state => state)(Home);
