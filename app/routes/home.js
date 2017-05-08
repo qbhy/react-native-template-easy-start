@@ -9,21 +9,26 @@ import {
 
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
-        const {home} = this.props;
+        const {home, dispatch} = this.props;
         return (
             <View style={styles.container}>
                 <Text onPress={()=>{
                     Actions.login({});
                 }} style={styles.welcome}>
-                    {home.homeTitle}
+                    {home.homeTitle} ，点击调到登录页。
                 </Text>
                 <Text style={styles.instructions}>
-                    To get started, edit index.ios.js
+                    第 {home.count} 次启动应用。
                 </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload,{'\n'}
-                    Cmd+D or shake for dev menu
+                <Text style={styles.instructions} onPress={()=>{
+                    dispatch({type:'home/addCount'});
+                }}>
+                    点击添加计数器
                 </Text>
             </View>
         );
