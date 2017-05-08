@@ -1,29 +1,17 @@
 import React, {Component} from 'react';
 import {connect} from 'dva';
-import {Actions} from 'react-native-router-flux';
 import {
     View,
     Text,
     StyleSheet
 } from 'react-native';
 
-
-class Home extends Component {
+class Login extends Component {
     render() {
-        const {home} = this.props;
         return (
             <View style={styles.container}>
-                <Text onPress={()=>{
-                    Actions.login({});
-                }} style={styles.welcome}>
-                    {home.homeTitle}
-                </Text>
                 <Text style={styles.instructions}>
-                    To get started, edit index.ios.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload,{'\n'}
-                    Cmd+D or shake for dev menu
+                    登录页面
                 </Text>
             </View>
         );
@@ -49,4 +37,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default connect(state => state)(Home);
+export default connect(state => state)(Login);
