@@ -1,7 +1,6 @@
 {
-	"name": "reactNativeDva",
-	"version": "0.0.1",
-	"private": true,
+	"name": "react-native-template-easy-start",
+	"version": "0.0.2",
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest"
@@ -24,5 +23,23 @@
 	},
 	"jest": {
 		"preset": "react-native"
-	}
+	},
+	"description": "简单的react-native脚手架",
+	"main": "ReactotronConfig.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/96qbhy/react-native-dva.git"
+	},
+	"keywords": [
+		"react",
+		"react-native",
+		"template",
+		"dva"
+	],
+	"author": "96qbhy",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/96qbhy/react-native-dva/issues"
+	},
+	"homepage": "https://github.com/96qbhy/react-native-dva#readme"
 }
