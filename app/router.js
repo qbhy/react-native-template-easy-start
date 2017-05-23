@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Scene, Router, ActionConst} from 'react-native-router-flux';
-import Home from './home';
-import Login from './login';
+import Home from './routes/home';
+import Login from './routes/login';
 
 export default class App extends Component {
     constructor(props) {
