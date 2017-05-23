@@ -7,6 +7,8 @@ import {log} from './utils'
 import dva from 'dva/mobile';
 import Storage from 'react-native-storage';
 import Router from './router';
+import appConfig from '../app';
+
 global.storage = new Storage({
     size: 1000,     // 最大容量，默认值1000条数据循环存储
     // 存储引擎：对于RN使用AsyncStorage，对于web使用window.localStorage
@@ -48,4 +50,4 @@ app.router(() => <Router />);
 const App = app.start();
 persistStore(app._store, {storage: AsyncStorage});
 
-AppRegistry.registerComponent('reactNativeDva', () => App);
+AppRegistry.registerComponent(appConfig.name, () => App);
