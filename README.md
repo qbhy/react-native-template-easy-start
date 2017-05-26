@@ -22,6 +22,8 @@ react-native init ExampleEasyStart --template easy-start
 ### 2. 克隆本项目运行
 ```
 git clone git@github.com:96qbhy/react-native-template-easy-start.git
+cd react-native-template-easy-start
+yarn #or npm install
 ```
 
 > APP入口文件是 `app/index.js`
