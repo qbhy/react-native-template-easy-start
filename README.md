@@ -3,7 +3,7 @@
 2. react-native-router-flux 相关资料请看 -->[react-native-router-flux](https://github.com/aksonov/react-native-router-flux)。
 
 ## 如何使用?
-
+### 1. 新建项目(推荐)
 1. 安装 `yarn` 和 `react-native-cli`。
 ```
 npm install -g yarn react-native-cli
@@ -17,6 +17,11 @@ yarn config set disturl https://npm.taobao.org/dist --global
 2. 使用 `react-native-cli` 初始化项目。
 ```
 react-native init ExampleEasyStart --template easy-start
+```
+
+### 2. 克隆本项目运行
+```
+git clone git@github.com:96qbhy/react-native-template-easy-start.git
 ```
 
 > APP入口文件是 `app/index.js`
