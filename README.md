@@ -19,6 +19,10 @@ yarn config set disturl https://npm.taobao.org/dist --global
 react-native init ExampleEasyStart --template easy-start
 ```
 
+3. 处理依赖  
+把本项目的 `package.json` 文件里的 `devDependencies` 和 `dependencies`  跟新 init 出来的项目的 `package.json` 合并。
+
+
 ### 2. 克隆本项目运行
 ```
 git clone git@github.com:96qbhy/react-native-template-easy-start.git
