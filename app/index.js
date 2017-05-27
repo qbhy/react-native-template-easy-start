@@ -32,6 +32,10 @@ global.storage = new Storage({
 });
 
 
+/**
+ * 生成dva实例。(具体参数可以去dva官网看)
+ * @type {DvaInstance}
+ */
 const app = dva({
     initialState: {},
     extraEnhancers: [autoRehydrate()],
