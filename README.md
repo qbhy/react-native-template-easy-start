@@ -40,6 +40,6 @@ react-native run-android
 ```
 react-native run-ios
 ```
+> ios 仅支持在 OS X 系统进行开发，且必须安装 `XCODE`
 
-
-> APP入口文件是 `app/index.js`
+APP入口文件是 `app/index.js` , 赶紧开始你的第一个 `react-native` 应用吧。

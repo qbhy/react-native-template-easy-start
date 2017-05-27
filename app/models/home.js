@@ -1,7 +1,7 @@
 export default {
     namespace: 'home',
     state: {
-        homeTitle: '首页标题',
+        homeTitle: 'hello world!',
         count: 1,
         login: false,
     },
